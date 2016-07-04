@@ -1,0 +1,17 @@
+plugins {
+	id "groovy"
+	id "idea"
+}
+
+repositories {
+	jcenter()
+	maven {
+		name "shadowfacts"
+		url "http://mvn.rx14.co.uk/shadowfacts/"
+	}
+}
+
+dependencies {
+	compile group: "org.codehaus.groovy", name: "groovy-all", version: groovy_version
+    compile group: "net.shadowfacts", name: "Baymax", version: baymax_version
+}
